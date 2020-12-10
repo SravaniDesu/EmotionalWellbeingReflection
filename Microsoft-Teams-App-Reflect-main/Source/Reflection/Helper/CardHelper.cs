@@ -600,6 +600,7 @@ namespace Reflection.Helper
                         //new AdaptiveTextBlock($"{data.question}") { Id = ($"{data.question }"), Weight = AdaptiveTextWeight.Bolder, Size=AdaptiveTextSize.Large, Wrap=true, MaxWidth=100}
                     },
 
+                    Height = new AdaptiveHeight(20),
                     Actions = new List<AdaptiveAction>
                     {
                     }
