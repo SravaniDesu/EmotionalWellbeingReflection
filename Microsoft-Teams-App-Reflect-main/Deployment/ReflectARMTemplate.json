@@ -22,7 +22,7 @@
     }
   },
   "variables": {
-    "gitRepoUrl": "https://github.com/OfficeDev/Microsoft-Teams-App-Reflect.git",
+    "gitRepoUrl": "https://github.com/SravaniDesu/EmotionalWellbeingReflection.git",
     "gitBranch": "main",
     "AppInsightsComponents": "[concat(take(toLower(parameters('WebAppService')), 16), '-ai-', uniqueString(subscription().subscriptionId, resourceGroup().id, 'ai'))]",
     "AppInsights": "[concat(take(toLower(parameters('WebAppService')), 16), '-ai-', uniqueString(subscription().subscriptionId, resourceGroup().id, 'ai'))]",
