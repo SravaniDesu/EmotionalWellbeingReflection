@@ -133,7 +133,17 @@ namespace Microsoft.Teams.Apps.Reflect.Web
                 }
                 else
                 {
-                    await turnContext.SendActivityAsync(MessageFactory.Text($"Hello from the TeamsMessagingExtensionsActionPreviewBot."), cancellationToken);
+                    var adaptiveCard = _cardHelper.CreateNewPeerReflection(turnContext.Activity.From.Name);
+                    Attachment attachment = new Attachment()
+                    {
+                        ContentType = AdaptiveCard.ContentType,
+                        Content = adaptiveCard
+                    };
+                    var reply = Activity.CreateMessageActivity();
+                    reply.Attachments.Add(attachment);
+                    
+                    await turnContext.SendActivityAsync(reply, cancellationToken);
+
                 }
 
             }

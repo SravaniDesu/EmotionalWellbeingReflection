@@ -242,6 +242,23 @@ namespace Microsoft.Teams.Apps.Reflect.Web.Controllers
             }
         }
 
+        [Route("api/PeerReflectionData/{username}")]
+        public string GetPeerReflectionData(string username)
+        {
+            try
+            {
+                _telemetry.TrackEvent("GetPeerReflectionData");
+                CardHelper card = new CardHelper(_configuration, _telemetry);
+                var data = card.CreateNewPeerReflection(username);
+                string output = JsonConvert.SerializeObject(data);
+                return output;
+            }
+            catch (Exception e)
+            {
+                _telemetry.TrackEvent("GetPeerReflectionData Exception " + e);
+                return null;
+            }
+        }
         /// <summary>
         /// Creates a new reflection adaptive card.
         /// </summary>
