@@ -561,7 +561,7 @@ namespace Reflection.Helper
                                     Height=AdaptiveHeight.Auto,
                                     Items =new List<AdaptiveElement>()
                                                 {
-                                                  new AdaptiveImage(){Url=new Uri(_configuration["BaseUri"] + "/images/Default_1.png"),PixelHeight=12, PixelWidth=12, AltText="State",HorizontalAlignment=AdaptiveHorizontalAlignment.Center }
+                                                  new AdaptiveImage(){Url=new Uri(_configuration["BaseUri"] + "/images/Default_1.png"),PixelHeight=30, PixelWidth=30, AltText="State",HorizontalAlignment=AdaptiveHorizontalAlignment.Center }
                                                },
                                 },
                                 // new AdaptiveColumn()
