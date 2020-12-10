@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
   "manifestVersion": "1.5",
   "version": "1.0.0",
-  "id": "16ECFF5B-47A7-421A-8208-BF857237722A",
+  "id": "BCF61812-C6ED-41ED-8043-859CE53AF4AF",
   "packageName": "com.contoso.helloworld",
   "developer": {
     "name": "Microsoft",
@@ -28,7 +28,7 @@
   "configurableTabs": [],
   "bots": [
     {
-      "botId": "f7458211-4c14-48df-9284-cb76c07c1b54",
+      "botId": "8ebd5ba9-8d60-4888-9c20-1299398d31aa",
       "scopes": [
         "team",
         "groupchat",
@@ -38,7 +38,7 @@
   ],
   "composeExtensions": [
     {
-      "botId": "f7458211-4c14-48df-9284-cb76c07c1b54",
+      "botId": "8ebd5ba9-8d60-4888-9c20-1299398d31aa",
       "canUpdateConfiguration": false,
       "commands": [
         {
