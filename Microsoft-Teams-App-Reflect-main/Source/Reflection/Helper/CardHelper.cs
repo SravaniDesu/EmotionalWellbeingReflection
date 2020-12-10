@@ -168,133 +168,133 @@ namespace Reflection.Helper
                     {
                         Columns = new List<AdaptiveColumn>()
                         {
-                            new AdaptiveColumn()
-                            {
-                                Width = AdaptiveColumnWidth.Auto,
-                                VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
-                                Spacing=AdaptiveSpacing.Medium,
-                                Items = new List<AdaptiveElement>()
-                                {
-                                    new AdaptiveImage() { PixelWidth=12,PixelHeight=12, Url = new Uri(_configuration["BaseUri"] + "/images/ref1.png"),Id = "1", HorizontalAlignment = AdaptiveHorizontalAlignment.Center}
-                                },
-                            },
-                            new AdaptiveColumn()
-                            {
-                                Width = AdaptiveColumnWidth.Auto,
-                                VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
-                                Spacing=AdaptiveSpacing.Small,
-                                Items = new List<AdaptiveElement>()
-                                {
-                                    new AdaptiveTextBlock(keyValues[1].Count.ToString())
-                                }
-                            },
-                            new AdaptiveColumn()
-                            {
-                                Width = AdaptiveColumnWidth.Auto,
-                                VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
-                                Spacing=AdaptiveSpacing.Medium,
-                                Items = new List<AdaptiveElement>()
-                                {
-                                    new AdaptiveImage() { PixelWidth=12,PixelHeight=12, Url = new Uri(_configuration["BaseUri"] + "/images/ref2.png"),Id = "2", HorizontalAlignment = AdaptiveHorizontalAlignment.Center}
-                                }
-                            },
-                            new AdaptiveColumn()
-                            {
-                                Width = AdaptiveColumnWidth.Auto,
-                                VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
-                                Spacing=AdaptiveSpacing.Small,
-                                Items = new List<AdaptiveElement>()
-                                {
-                                    new AdaptiveTextBlock(keyValues[2].Count.ToString())
-                                }
-                            },
-                            new AdaptiveColumn()
-                            {
-                                Width = AdaptiveColumnWidth.Auto,
-                                VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
-                                Spacing=AdaptiveSpacing.Medium,
-                                Items = new List<AdaptiveElement>()
-                                {
-                                    new AdaptiveImage() { PixelWidth=12,PixelHeight=12, Url = new Uri(_configuration["BaseUri"] + "/images/ref3.png"),
-                                        Style = AdaptiveImageStyle.Default, Id = "3", HorizontalAlignment=AdaptiveHorizontalAlignment.Center}
-                                }
-                            },
-                            new AdaptiveColumn()
-                            {
-                                Width = AdaptiveColumnWidth.Auto,
-                                VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
-                                Spacing=AdaptiveSpacing.Small,
-                                Items = new List<AdaptiveElement>()
-                                {
-                                    new AdaptiveTextBlock(keyValues[3].Count.ToString())
-                                }
-                            },
-                            new AdaptiveColumn()
-                            {
-                                Width = AdaptiveColumnWidth.Auto,
-                                VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
-                                Spacing=AdaptiveSpacing.Medium,
-                                Items = new List<AdaptiveElement>()
-                                {
-                                    new AdaptiveImage() { PixelWidth=12,PixelHeight=12, Url = new Uri(_configuration["BaseUri"] + "/images/ref4.png"),
-                                        Style = AdaptiveImageStyle.Default, Id = "4", HorizontalAlignment = AdaptiveHorizontalAlignment.Center }
-                                }
-                            },
-                            new AdaptiveColumn()
-                            {
-                                Width = AdaptiveColumnWidth.Auto,
-                                VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
-                                Spacing=AdaptiveSpacing.Small,
-                                Items = new List<AdaptiveElement>()
-                                {
-                                    new AdaptiveTextBlock(keyValues[4].Count.ToString())
-                                }
-                            },
-                            new AdaptiveColumn()
-                            {
-                                Width = AdaptiveColumnWidth.Auto,
-                                VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
-                                Spacing=AdaptiveSpacing.Medium,
-                                Items = new List<AdaptiveElement>()
-                                {
-                                    new AdaptiveImage() { PixelWidth=12,PixelHeight=12, Url = new Uri(_configuration["BaseUri"] + "/images/ref5.png"),
-                                        Style = AdaptiveImageStyle.Default, Id = "5", HorizontalAlignment = AdaptiveHorizontalAlignment.Center }
-                                }
-                            },
-                            new AdaptiveColumn()
-                            {
-                                Width = AdaptiveColumnWidth.Auto,
-                                VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
-                                Spacing=AdaptiveSpacing.Small,
-                                Items = new List<AdaptiveElement>()
-                                {
-                                    new AdaptiveTextBlock(keyValues[5].Count.ToString())
-                                }
-                            },
+                            //new AdaptiveColumn()
+                            //{
+                            //    Width = AdaptiveColumnWidth.Auto,
+                            //    VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
+                            //    Spacing=AdaptiveSpacing.Medium,
+                            //    Items = new List<AdaptiveElement>()
+                            //    {
+                            //        new AdaptiveImage() { PixelWidth=12,PixelHeight=12, Url = new Uri(_configuration["BaseUri"] + "/images/ref1.png"),Id = "1", HorizontalAlignment = AdaptiveHorizontalAlignment.Center}
+                            //    },
+                            //},
+                            //new AdaptiveColumn()
+                            //{
+                            //    Width = AdaptiveColumnWidth.Auto,
+                            //    VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
+                            //    Spacing=AdaptiveSpacing.Small,
+                            //    Items = new List<AdaptiveElement>()
+                            //    {
+                            //        new AdaptiveTextBlock(keyValues[1].Count.ToString())
+                            //    }
+                            //},
+                            //new AdaptiveColumn()
+                            //{
+                            //    Width = AdaptiveColumnWidth.Auto,
+                            //    VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
+                            //    Spacing=AdaptiveSpacing.Medium,
+                            //    Items = new List<AdaptiveElement>()
+                            //    {
+                            //        new AdaptiveImage() { PixelWidth=12,PixelHeight=12, Url = new Uri(_configuration["BaseUri"] + "/images/ref2.png"),Id = "2", HorizontalAlignment = AdaptiveHorizontalAlignment.Center}
+                            //    }
+                            //},
+                            //new AdaptiveColumn()
+                            //{
+                            //    Width = AdaptiveColumnWidth.Auto,
+                            //    VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
+                            //    Spacing=AdaptiveSpacing.Small,
+                            //    Items = new List<AdaptiveElement>()
+                            //    {
+                            //        new AdaptiveTextBlock(keyValues[2].Count.ToString())
+                            //    }
+                            //},
+                            //new AdaptiveColumn()
+                            //{
+                            //    Width = AdaptiveColumnWidth.Auto,
+                            //    VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
+                            //    Spacing=AdaptiveSpacing.Medium,
+                            //    Items = new List<AdaptiveElement>()
+                            //    {
+                            //        new AdaptiveImage() { PixelWidth=12,PixelHeight=12, Url = new Uri(_configuration["BaseUri"] + "/images/ref3.png"),
+                            //            Style = AdaptiveImageStyle.Default, Id = "3", HorizontalAlignment=AdaptiveHorizontalAlignment.Center}
+                            //    }
+                            //},
+                            //new AdaptiveColumn()
+                            //{
+                            //    Width = AdaptiveColumnWidth.Auto,
+                            //    VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
+                            //    Spacing=AdaptiveSpacing.Small,
+                            //    Items = new List<AdaptiveElement>()
+                            //    {
+                            //        new AdaptiveTextBlock(keyValues[3].Count.ToString())
+                            //    }
+                            //},
+                            //new AdaptiveColumn()
+                            //{
+                            //    Width = AdaptiveColumnWidth.Auto,
+                            //    VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
+                            //    Spacing=AdaptiveSpacing.Medium,
+                            //    Items = new List<AdaptiveElement>()
+                            //    {
+                            //        new AdaptiveImage() { PixelWidth=12,PixelHeight=12, Url = new Uri(_configuration["BaseUri"] + "/images/ref4.png"),
+                            //            Style = AdaptiveImageStyle.Default, Id = "4", HorizontalAlignment = AdaptiveHorizontalAlignment.Center }
+                            //    }
+                            //},
+                            //new AdaptiveColumn()
+                            //{
+                            //    Width = AdaptiveColumnWidth.Auto,
+                            //    VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
+                            //    Spacing=AdaptiveSpacing.Small,
+                            //    Items = new List<AdaptiveElement>()
+                            //    {
+                            //        new AdaptiveTextBlock(keyValues[4].Count.ToString())
+                            //    }
+                            //},
+                            //new AdaptiveColumn()
+                            //{
+                            //    Width = AdaptiveColumnWidth.Auto,
+                            //    VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
+                            //    Spacing=AdaptiveSpacing.Medium,
+                            //    Items = new List<AdaptiveElement>()
+                            //    {
+                            //        new AdaptiveImage() { PixelWidth=12,PixelHeight=12, Url = new Uri(_configuration["BaseUri"] + "/images/ref5.png"),
+                            //            Style = AdaptiveImageStyle.Default, Id = "5", HorizontalAlignment = AdaptiveHorizontalAlignment.Center }
+                            //    }
+                            //},
+                            //new AdaptiveColumn()
+                            //{
+                            //    Width = AdaptiveColumnWidth.Auto,
+                            //    VerticalContentAlignment=AdaptiveVerticalContentAlignment.Center,
+                            //    Spacing=AdaptiveSpacing.Small,
+                            //    Items = new List<AdaptiveElement>()
+                            //    {
+                            //        new AdaptiveTextBlock(keyValues[5].Count.ToString())
+                            //    }
+                            //},
                         }
                     }
                 },
                     Actions = new List<AdaptiveAction>
                 {
-                    new AdaptiveSubmitAction()
-                    {
-                        Type = "Action.Submit",
-                        Title = "View reflections",
-                        Data =
-                        new TaskModuleActionHelper.AdaptiveCardValue<TaskModuleActionDetails>()
-                        {
-                           Data=new TaskModuleActionDetails()
-                            {
-                                type ="task/fetch",
-                                URL =_configuration["BaseUri"] + "/openReflections/",
-                            },
-                            DataJson=new DataJson
-                            {
-                                ReflectionId=reflectionId,
-                                FeedbackId=0
-                            }
-                        }
-                    },
+                    //new AdaptiveSubmitAction()
+                    //{
+                    //    Type = "Action.Submit",
+                    //    Title = "View reflections",
+                    //    Data =
+                    //    new TaskModuleActionHelper.AdaptiveCardValue<TaskModuleActionDetails>()
+                    //    {
+                    //       Data=new TaskModuleActionDetails()
+                    //        {
+                    //            type ="task/fetch",
+                    //            URL =_configuration["BaseUri"] + "/openReflections/",
+                    //        },
+                    //        DataJson=new DataJson
+                    //        {
+                    //            ReflectionId=reflectionId,
+                    //            FeedbackId=0
+                    //        }
+                    //    }
+                    //},
                 },
                 };
             }
