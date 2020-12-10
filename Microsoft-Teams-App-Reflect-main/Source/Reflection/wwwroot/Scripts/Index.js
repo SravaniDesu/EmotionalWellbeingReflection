@@ -293,7 +293,7 @@ function GetDefaultQuestions(userPrincipleName) {
             } else {
                 blockdata = blockdata + '<option class="default-opt" disabled>' + 'No custom questions entered yet' + '</option>';
             }
-            blockdata = blockdata + '<optgroup label="Potential questions">Potential questions</optgroup>';
+            //blockdata = blockdata + '<optgroup label="Potential questions">Potential questions</optgroup>';
             defaultquestions.forEach((x) => {
                 blockdata =
                     blockdata +
