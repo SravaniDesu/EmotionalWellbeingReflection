@@ -381,45 +381,45 @@ namespace Reflection.Helper
                         {
                             Columns = new List<AdaptiveColumn>()
                             {
-                                 new AdaptiveColumn()
-                                {
-                                    Width=AdaptiveColumnWidth.Auto,
-                                    Height=AdaptiveHeight.Auto,
-                                    Items =new List<AdaptiveElement>()
-                                                {
-                                                  new AdaptiveImage(){Url=new Uri(_configuration["BaseUri"] + "/images/iconCreator.png"),PixelHeight=12, PixelWidth=12, AltText="Creator",HorizontalAlignment=AdaptiveHorizontalAlignment.Center }
-                                               },
-                                },
-                                 new AdaptiveColumn()
-                                {
-                                    Width=AdaptiveColumnWidth.Auto,
-                                    Height=AdaptiveHeight.Auto,
-                                    Spacing=AdaptiveSpacing.Small,
-                                    Items=new List<AdaptiveElement>()
-                                    {
-                                     new AdaptiveTextBlock("Created by "+ $"{data.postCreateBy} ") { Color = AdaptiveTextColor.Default, Size=AdaptiveTextSize.Small, Wrap=true }
-                                    },
-                                 },
-                                 new AdaptiveColumn()
-                                {
-                                    Width=AdaptiveColumnWidth.Auto,
-                                    Height=AdaptiveHeight.Auto,
-                                    Spacing=AdaptiveSpacing.Medium,
-                                    Items=new List<AdaptiveElement>()
-                                    {
-                                        new AdaptiveImage(){Url=new Uri(_configuration["BaseUri"] + "/images/iconPrivacy.png"),PixelHeight=12, PixelWidth=12,AltText="Privacy",HorizontalAlignment=AdaptiveHorizontalAlignment.Center,Spacing=AdaptiveSpacing.None }
-                                    },
-                                },
-                                 new AdaptiveColumn()
-                                {
-                                    Width=AdaptiveColumnWidth.Auto,
-                                    Height=AdaptiveHeight.Auto,
-                                    Spacing=AdaptiveSpacing.Small,
-                                    Items=new List<AdaptiveElement>()
-                                    {
-                                        new AdaptiveTextBlock($"{data.privacy}") { Color = AdaptiveTextColor.Default, Size=AdaptiveTextSize.Small, Wrap=true }
-                                    },
-                                }
+                                // new AdaptiveColumn()
+                                //{
+                                //    Width=AdaptiveColumnWidth.Auto,
+                                //    Height=AdaptiveHeight.Auto,
+                                //    Items =new List<AdaptiveElement>()
+                                //                {
+                                //                  new AdaptiveImage(){Url=new Uri(_configuration["BaseUri"] + "/images/iconCreator.png"),PixelHeight=12, PixelWidth=12, AltText="Creator",HorizontalAlignment=AdaptiveHorizontalAlignment.Center }
+                                //               },
+                                //},
+                                // new AdaptiveColumn()
+                                //{
+                                //    Width=AdaptiveColumnWidth.Auto,
+                                //    Height=AdaptiveHeight.Auto,
+                                //    Spacing=AdaptiveSpacing.Small,
+                                //    Items=new List<AdaptiveElement>()
+                                //    {
+                                //     new AdaptiveTextBlock("Created by "+ $"{data.postCreateBy} ") { Color = AdaptiveTextColor.Default, Size=AdaptiveTextSize.Small, Wrap=true }
+                                //    },
+                                // },
+                                // new AdaptiveColumn()
+                                //{
+                                //    Width=AdaptiveColumnWidth.Auto,
+                                //    Height=AdaptiveHeight.Auto,
+                                //    Spacing=AdaptiveSpacing.Medium,
+                                //    Items=new List<AdaptiveElement>()
+                                //    {
+                                //        new AdaptiveImage(){Url=new Uri(_configuration["BaseUri"] + "/images/iconPrivacy.png"),PixelHeight=12, PixelWidth=12,AltText="Privacy",HorizontalAlignment=AdaptiveHorizontalAlignment.Center,Spacing=AdaptiveSpacing.None }
+                                //    },
+                                //},
+                                // new AdaptiveColumn()
+                                //{
+                                //    Width=AdaptiveColumnWidth.Auto,
+                                //    Height=AdaptiveHeight.Auto,
+                                //    Spacing=AdaptiveSpacing.Small,
+                                //    Items=new List<AdaptiveElement>()
+                                //    {
+                                //        new AdaptiveTextBlock($"{data.privacy}") { Color = AdaptiveTextColor.Default, Size=AdaptiveTextSize.Small, Wrap=true }
+                                //    },
+                                //}
                             }
                         },
                         new AdaptiveTextBlock($"{data.question}") { Id = ($"{data.question }"), Weight = AdaptiveTextWeight.Bolder, Size=AdaptiveTextSize.Large, Wrap=true, MaxWidth=100}
