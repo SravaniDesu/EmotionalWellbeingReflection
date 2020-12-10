@@ -597,12 +597,11 @@ namespace Reflection.Helper
                             }
                         },
                         new AdaptiveImage() {
-                            Height= new AdaptiveHeight(10),
+                            Height= new AdaptiveHeight(40),
                              Url = new Uri(_configuration["BaseUri"] + "/images/Default_1.png" ) },
                         //new AdaptiveTextBlock($"{data.question}") { Id = ($"{data.question }"), Weight = AdaptiveTextWeight.Bolder, Size=AdaptiveTextSize.Large, Wrap=true, MaxWidth=100}
                     },
 
-                    Height = new AdaptiveHeight(20),
                     Actions = new List<AdaptiveAction>
                     {
                     }
