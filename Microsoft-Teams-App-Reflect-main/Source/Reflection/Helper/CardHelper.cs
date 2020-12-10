@@ -596,7 +596,9 @@ namespace Reflection.Helper
                                 //}
                             }
                         },
-                        new AdaptiveImage() { Url = new Uri(_configuration["BaseUri"] + "/images/Default_1.png" ) },
+                        new AdaptiveImage() {
+                            Height= new AdaptiveHeight(10),
+                             Url = new Uri(_configuration["BaseUri"] + "/images/Default_1.png" ) },
                         //new AdaptiveTextBlock($"{data.question}") { Id = ($"{data.question }"), Weight = AdaptiveTextWeight.Bolder, Size=AdaptiveTextSize.Large, Wrap=true, MaxWidth=100}
                     },
 
