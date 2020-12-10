@@ -555,15 +555,15 @@ namespace Reflection.Helper
                         {
                             Columns = new List<AdaptiveColumn>()
                             {
-                                // new AdaptiveColumn()
-                                //{
-                                //    Width=AdaptiveColumnWidth.Auto,
-                                //    Height=AdaptiveHeight.Auto,
-                                //    Items =new List<AdaptiveElement>()
-                                //                {
-                                //                  new AdaptiveImage(){Url=new Uri(_configuration["BaseUri"] + "/images/iconCreator.png"),PixelHeight=12, PixelWidth=12, AltText="Creator",HorizontalAlignment=AdaptiveHorizontalAlignment.Center }
-                                //               },
-                                //},
+                                 new AdaptiveColumn()
+                                {
+                                    Width=AdaptiveColumnWidth.Auto,
+                                    Height=AdaptiveHeight.Auto,
+                                    Items =new List<AdaptiveElement>()
+                                                {
+                                                  new AdaptiveImage(){Url=new Uri(_configuration["BaseUri"] + "/images/Default_1.png"),PixelHeight=12, PixelWidth=12, AltText="State",HorizontalAlignment=AdaptiveHorizontalAlignment.Center }
+                                               },
+                                },
                                 // new AdaptiveColumn()
                                 //{
                                 //    Width=AdaptiveColumnWidth.Auto,
@@ -596,9 +596,9 @@ namespace Reflection.Helper
                                 //}
                             }
                         },
-                        new AdaptiveImage() {
-                            Height= new AdaptiveHeight(40),
-                             Url = new Uri(_configuration["BaseUri"] + "/images/Default_1.png" ) },
+                       // new AdaptiveImage() {
+                         //   Height= new AdaptiveHeight(30),
+                           //  Url = new Uri(_configuration["BaseUri"] + "/images/Default_1.png" ) },
                         //new AdaptiveTextBlock($"{data.question}") { Id = ($"{data.question }"), Weight = AdaptiveTextWeight.Bolder, Size=AdaptiveTextSize.Large, Wrap=true, MaxWidth=100}
                     },
 
