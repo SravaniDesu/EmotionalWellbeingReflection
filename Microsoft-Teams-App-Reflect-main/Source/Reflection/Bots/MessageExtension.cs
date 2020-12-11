@@ -316,7 +316,7 @@ namespace Microsoft.Teams.Apps.Reflect.Web
                         {
                             Height = 600,
                             Width = 600,
-                            Title = "Make space for people to share how they feel",
+                            Title = "Let's care for the well being of each other",
                             Url = reldata.data.URL + reflectionid + '/' + feedbackId + '/' + response.userName,
                         },
                     },
@@ -422,7 +422,7 @@ namespace Microsoft.Teams.Apps.Reflect.Web
                                 {
                                     Height = 600,
                                     Width = 780,
-                                    Title = "Make space for people to share how they feel",
+                                    Title = "Let's care for the well being of each other",
                                     Url = this._configuration["BaseUri"] + "/ManageRecurringPosts/" + postCreatedByEmail + "?pathfromindex=true"
                                 },
                             },
@@ -438,7 +438,7 @@ namespace Microsoft.Teams.Apps.Reflect.Web
                                 {
                                     Height = 600,
                                     Width = 780,
-                                    Title = "Make space for people to share how they feel",
+                                    Title = "Let's care for the well being of each other",
                                     Url = this._configuration["BaseUri"] + "/openReflectionFeedback/" + taskInfo.reflectionID + "/" + taskInfo.feedback,
                                 },
                             },
@@ -509,7 +509,7 @@ namespace Microsoft.Teams.Apps.Reflect.Web
                             {
                                 Height = 620,
                                 Width = 800,
-                                Title = "Make space for people to share how they feel",
+                                Title = "Let's care for the well being of each other",
                                 Url = url
                             },
                         },
@@ -537,7 +537,7 @@ namespace Microsoft.Teams.Apps.Reflect.Web
                                 {
                                     Height = 100,
                                     Width = 300,
-                                    Title = "Make space for people to share how they feel",
+                                    Title = "Let's care for the well being of each other",
                                     Card = attachmentfeedback
                                 },
                             },
@@ -561,7 +561,7 @@ namespace Microsoft.Teams.Apps.Reflect.Web
                             {
                                 Height = 620,
                                 Width = 800,
-                                Title = "Make space for people to share how they feel",
+                                Title = "Let's care for the well being of each other",
                                 Url = url
                             },
                         },

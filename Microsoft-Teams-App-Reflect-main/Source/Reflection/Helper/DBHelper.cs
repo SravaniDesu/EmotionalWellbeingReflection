@@ -357,9 +357,15 @@ namespace Reflection.Helper
                                 break;
                             }
                         }
-                        else
+                        if (recurssionEntity.CustomRecurssionTypeValue.Contains("Day"))
                         {
                             DateTime? nextcustomdailyday = DateTime.Now.AddDays(1);
+                            calculatedNextExecutionDate = recurssionEntity.RecurssionEndDate >= nextcustomdailyday ? nextcustomdailyday : null;
+                            break;
+                        }
+                        else
+                        {
+                            DateTime? nextcustomdailyday = DateTime.Now.AddHours(1);
                             calculatedNextExecutionDate = recurssionEntity.RecurssionEndDate >= nextcustomdailyday ? nextcustomdailyday : null;
                             break;
                         }
