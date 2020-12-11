@@ -48,5 +48,6 @@ namespace Reflection.Interfaces
         string Encrypt(string text);
 
         string Decrypt(string text);
+        int GetPeerReflectionFeedback(string channelId);
     }
 }

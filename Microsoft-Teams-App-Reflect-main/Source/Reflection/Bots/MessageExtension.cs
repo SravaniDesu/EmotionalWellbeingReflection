@@ -133,7 +133,9 @@ namespace Microsoft.Teams.Apps.Reflect.Web
                 }
                 else
                 {
-                    var adaptiveCard = _cardHelper.CreateNewPeerReflection(turnContext.Activity.From.Name);
+
+                    int feedbackValue = _dbHelper.GetPeerReflectionFeedback(turnContext.Activity.TeamsGetChannelId());
+                    var adaptiveCard = _cardHelper.CreateNewPeerReflection(feedbackValue);
                     Attachment attachment = new Attachment()
                     {
                         ContentType = AdaptiveCard.ContentType,

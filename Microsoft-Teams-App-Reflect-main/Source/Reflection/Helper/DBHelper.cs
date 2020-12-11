@@ -697,5 +697,10 @@ namespace Reflection.Helper
                 yield return JObject.FromObject(channelAccount).ToObject<TeamsChannelAccount>();
             }
         }
+
+        public int GetPeerReflectionFeedback(string channelId)
+        {
+            return 4;
+        }
     }
 }

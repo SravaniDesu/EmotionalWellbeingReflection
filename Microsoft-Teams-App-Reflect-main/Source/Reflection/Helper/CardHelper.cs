@@ -541,12 +541,36 @@ namespace Reflection.Helper
         /// </summary>
         /// <param name="data">This is viewModel holds the forntend data.</param>
         /// <returns>AdaptiveCard.</returns>
-        public AdaptiveCard CreateNewPeerReflection(string username)
+        public AdaptiveCard CreateNewPeerReflection(int feedback)
         {
             _telemetry.TrackEvent("CreateNewPeerReflection");
 
             try
             {
+                string url;
+
+                switch(feedback)
+                {
+                    case 1:
+                        url = _configuration["BaseUri"] + "/images/Default_1.png";
+                        break;
+                    case 2:
+                        url = _configuration["BaseUri"] + "/images/Default_2.png";
+                        break;
+                    case 3:
+                        url = _configuration["BaseUri"] + "/images/Default_3.png";
+                        break;
+                    case 4:
+                        url = _configuration["BaseUri"] + "/images/Default_4.png";
+                        break;
+                    case 5:
+                        url = _configuration["BaseUri"] + "/images/Default_5.png";
+                        break;
+                    default:
+                        url = _configuration["BaseUri"] + "/images/Default_3.png";
+                        break;
+                }
+
                 return new AdaptiveCard(new AdaptiveSchemaVersion(1, 2))
                 {
                     Body = new List<AdaptiveElement>
@@ -598,7 +622,7 @@ namespace Reflection.Helper
                         },
                         new AdaptiveImage() {
                             Height= new AdaptiveHeight(30),
-                             Url = new Uri(_configuration["BaseUri"] + "/images/Default_1.png" ) },
+                             Url = new Uri(url) },
                         //new AdaptiveTextBlock($"{data.question}") { Id = ($"{data.question }"), Weight = AdaptiveTextWeight.Bolder, Size=AdaptiveTextSize.Large, Wrap=true, MaxWidth=100}
                     },
 
