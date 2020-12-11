@@ -363,6 +363,12 @@ namespace Reflection.Helper
                             calculatedNextExecutionDate = recurssionEntity.RecurssionEndDate >= nextcustomdailyday ? nextcustomdailyday : null;
                             break;
                         }
+                        if (recurssionEntity.CustomRecurssionTypeValue.Contains("Minute"))
+                        {
+                            DateTime? nextcustomdailyday = DateTime.Now.AddMinutes(1);
+                            calculatedNextExecutionDate = recurssionEntity.RecurssionEndDate >= nextcustomdailyday ? nextcustomdailyday : null;
+                            break;
+                        }
                         else
                         {
                             DateTime? nextcustomdailyday = DateTime.Now.AddHours(1);
