@@ -746,7 +746,7 @@ namespace Reflection.Helper
                 feedback = feedback / count;
             }
 
-            return feedback;
+            return (int)Math.Floor((double)feedback);
         }
     }
 }
