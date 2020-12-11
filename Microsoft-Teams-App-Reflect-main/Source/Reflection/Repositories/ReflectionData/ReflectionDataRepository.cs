@@ -79,6 +79,31 @@ namespace Reflection.Repositories.ReflectionData
         }
 
         /// <summary>
+        /// Get All Reflection id for particular questionId.
+        /// </summary>
+        /// <param name="quesID">quesID.</param>
+        /// <returns>QuestionsDataEntity.</returns>
+        public async Task<List<ReflectionDataEntity>> GetAllRecflectionIdForQuesId(Guid? quesID)
+        {
+            _telemetry.TrackEvent("GetAllRecflectionIdForQuesId");
+
+            try
+            {
+                var allReflectionRows = await this.GetAllAsync(PartitionKeyNames.ReflectionDataTable.TableName);
+                var result = allReflectionRows.Where(d => d.QuestionID == quesID);
+                return result.ToList();
+            }
+            catch (Exception ex)
+            {
+                _telemetry.TrackException(ex);
+                return null;
+            }
+        }
+
+
+
+
+        /// <summary>
         /// Get message Id from Reflection.
         /// </summary>
         /// <param name="refId">refId.</param>
