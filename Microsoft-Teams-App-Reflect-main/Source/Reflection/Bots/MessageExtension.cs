@@ -354,7 +354,7 @@ namespace Microsoft.Teams.Apps.Reflect.Web
                             taskInfo.postCreateBy = name[0] + ' ' + name[1];
                             taskInfo.postCreatedByEmail = await _dbHelper.GetUserEmailId(turnContext);
                             taskInfo.channelID = turnContext.Activity.TeamsGetChannelId();
-                            taskInfo.postSendNowFlag = (taskInfo.executionTime == "Send now") ? true : false;
+                            taskInfo.postSendNowFlag = false; // if it is true means we don't want to make recurrence (taskInfo.executionTime == "Send now") ? true : false;
                             taskInfo.IsActive = true;
                             taskInfo.questionRowKey = Guid.NewGuid().ToString();
                             taskInfo.recurrsionRowKey = Guid.NewGuid().ToString();
@@ -362,6 +362,9 @@ namespace Microsoft.Teams.Apps.Reflect.Web
                             taskInfo.serviceUrl = turnContext.Activity.ServiceUrl;
                             taskInfo.teantId = turnContext.Activity.Conversation.TenantId;
                             taskInfo.scheduleId = Guid.NewGuid().ToString();
+                            taskInfo.recurssionType = "Repeat";
+                            taskInfo.executionTime = "Later";
+                            taskInfo.executionDate = DateTime.Now;
                             await _dbHelper.SaveReflectionDataAsync(taskInfo);
                             if (taskInfo.postSendNowFlag == true)
                             {
