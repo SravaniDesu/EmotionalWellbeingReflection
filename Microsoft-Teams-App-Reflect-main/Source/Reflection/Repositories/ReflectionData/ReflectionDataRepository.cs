@@ -144,5 +144,38 @@ namespace Reflection.Repositories.ReflectionData
                 return null;
             }
         }
+
+        /// <summary>
+        /// Get All Active Reflection.
+        /// </summary>
+        /// <param name="channelid">channel id.</param>
+        /// <returns>ReflectionDataEntity.</returns>
+        public async Task<List<ReflectionDataEntity>> GetAllActiveReflectionByChannelId(string channelid)
+        {
+            _telemetry.TrackEvent("GetAllActiveReflectionByChannelId");
+            try
+            {
+                var allRefs = await this.GetAllAsync(PartitionKeyNames.ReflectionDataTable.TableName);
+                List<ReflectionDataEntity> refDataEntity = allRefs.Where(c => c.IsActive == true && c.ChannelID == channelid).ToList();
+                DateTime date = DateTime.Today;
+                var todaysreflections = new List<ReflectionDataEntity>();
+
+                foreach (var reflection in refDataEntity)
+                {
+                    var refDate = reflection.RefCreatedDate;
+                    if(refDate.Day == date.Day && refDate.Month == date.Month && refDate.Year == date.Year)
+                    {
+                        todaysreflections.Add(reflection);
+                    }
+                }
+
+                return todaysreflections;
+            }
+            catch (Exception ex)
+            {
+                _telemetry.TrackException(ex);
+                return null;
+            }
+        }
     }
 }
